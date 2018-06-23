@@ -267,6 +267,7 @@ html{
 }
 
 #v-main .videos .box a{
+	overflow: hidden;
 	position:relative;
 	display:block;
 	width:100%;
@@ -287,8 +288,20 @@ html{
 	line-height:42px;
 }
 #v-main .videos .center a,#v-main .videos .right a{
+	overflow: hidden;
 	height:198px;
 	margin-bottom:30px;
+}
+#v-main .videos .center a img
+,#v-main .videos .right a img
+,#v-main .videos .left a img{
+	transform: scale(1);
+	transition-duration: .3s;
+}
+#v-main .videos .center a:hover img
+,#v-main .videos .right a:hover img
+,#v-main .videos .left a:hover img{
+	transform: scale(1.1);
 }
 #v-main .more{
 	position:absolute;
@@ -531,6 +544,7 @@ html{
 	height:100%;
 }
 #vip-main .v-m-content ul li a{
+	overflow: hidden;
 	float:left;
 	display:block;
 	width:150px;
@@ -556,11 +570,11 @@ html{
 	display:block;
 	width:100%;
 	height:100%;
-	/*transform:scale(1);*//* 缩放比例 1 */
-	/*transition:transform .3s;*/
+	transform:scale(1); /*缩放比例 1 */
+	transition:transform .3s;
 }
 #vip-main .v-m-content ul li a:hover img{
-	/*transform:scale(1.1); /*缩放比例 1.1*/
+	transform:scale(1.1); /*缩放比例 1.1
 	/*z-index:2;*/
 }
 
